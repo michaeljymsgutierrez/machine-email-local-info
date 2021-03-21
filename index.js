@@ -18,8 +18,8 @@ const transporter = nodemailer.createTransport(
 )
 
 const mailOptions = {
-  from: 'leeez711@gmail.com',
-  to: 'leeez711@gmail.com',
+  from: process.env.GMAIL_USERNAME,
+  to: process.env.GMAIL_USERNAME,
   subject: 'Machine Information',
   text: machineInformation,
 }
